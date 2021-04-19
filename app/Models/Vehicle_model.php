@@ -15,7 +15,7 @@ class Vehicle_model extends Model
         'id'
     ];
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $fillable = [
         'label',

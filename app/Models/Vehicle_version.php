@@ -16,7 +16,7 @@ class Vehicle_version extends Model
         'id'
     ];
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $fillable = [
         'model_id',

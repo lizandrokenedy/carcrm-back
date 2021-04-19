@@ -16,7 +16,7 @@ class Vehicle extends Model
         'id'
     ];
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $fillable = [
         "user_id",
@@ -48,4 +48,10 @@ class Vehicle extends Model
         "description",
         "status",
     ];
+
+
+    public function vehicle_photos()
+    {
+        return $this->hasMany(Vehicle_photos::class, 'vehicle_id', 'id')->orderBy('order', 'ASC');
+    }
 }

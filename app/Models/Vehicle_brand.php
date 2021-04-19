@@ -11,7 +11,7 @@ class Vehicle_brand extends Model
 
     protected $table = 'vehicle_brands';
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $guarded = [
         'id'

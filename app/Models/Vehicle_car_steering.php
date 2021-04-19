@@ -11,7 +11,7 @@ class Vehicle_car_steering extends Model
 
     protected $table = 'vehicle_car_steerings';
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $guarded = [
         'id'

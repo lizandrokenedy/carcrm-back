@@ -15,7 +15,7 @@ class Vehicle_cubiccms extends Model
         'id'
     ];
 
-    protected $timestamps = true;
+    //protected $timestamps = true;
 
     protected $fillable = [
         "label",
