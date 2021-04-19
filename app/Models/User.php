@@ -13,15 +13,39 @@ class User extends Authenticatable
 {
     use HasApiTokens, SoftDeletes, HasFactory, Notifiable;
 
+    protected $table = 'users';
+
+
+    protected $timestamps = true;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        "name",
+        "email",
+        "email_verified_at",
+        "password",
+        "remember_token",
+        "domain",
+        "subdomain",
+        "logo",
+        "facebook",
+        "facebook_page_id",
+        "facebook_pixel",
+        "google_analytics",
+        "whatsapp",
+        "email_contact",
+        "site_title",
+        "site_keywords",
+        "site_description",
+        "next_expiration",
+        "disabled_account",
+        "delete_account",
+        "plan_id",
+        "status",
     ];
 
     /**

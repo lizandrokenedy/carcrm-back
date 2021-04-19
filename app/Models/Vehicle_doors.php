@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Vehicle_doors extends Model
 {
     use HasFactory;
+
+    protected $table = 'vehicle_doors';
+
+    protected $guarded = [
+        'id'
+    ];
+
+    protected $timestamps = true;
+
+    protected $fillable = [
+        'label',
+        'value',
+    ];
 }
