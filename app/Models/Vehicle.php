@@ -16,6 +16,8 @@ class Vehicle extends Model
         'id'
     ];
 
+    protected $timestamps = true;
+
     protected $fillable = [
         "user_id",
         "tag_id",
