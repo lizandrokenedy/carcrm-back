@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::apiResources(['vehicles' => VehiclesController::class]);
 
 Route::group(['prefix' => 'upload'], function () {
-    Route::resource('vehicle', VehicleUploadController::class)->only(['create', 'update', 'destroy']);
+    Route::resource('vehicle', VehicleUploadController::class)->only(['store', 'update', 'destroy']);
 });
 
 Route::get('vehicles/{vehicle_type}/brand', [VehiclesController::class, 'brand']);
