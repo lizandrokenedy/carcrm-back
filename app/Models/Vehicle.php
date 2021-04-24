@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Json;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,7 +17,10 @@ class Vehicle extends Model
         'id'
     ];
 
-    //protected $timestamps = true;
+    protected $casts = [
+        'vehicle_features' => Json::class,
+        'vehicle_financial' => Json::class,
+    ];
 
     protected $fillable = [
         "user_id",
